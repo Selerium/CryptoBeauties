@@ -1,0 +1,23 @@
+@property --pink {
+	syntax: "<color>";
+	inherits: false;
+	initial-value: #EF5EE5;
+}
+
+@property --pink-shadow {
+	syntax: "<color>";
+	inherits: false;
+	initial-value: #ef5ee580;
+}
+
+@property --valid {
+	syntax: "<color>";
+	inherits: false;
+	initial-value: #1d991d;
+}
+
+@property --invalid {
+	syntax: "<color>";
+	inherits: false;
+	initial-value: #b41619;
+}

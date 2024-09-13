@@ -1,0 +1,33 @@
+:root {
+	background-color: black;
+	color: white;
+	font-family: 'urbanist';
+}
+
+html {
+	scroll-behavior: smooth;
+	position: relative;
+	overflow-x: hidden;
+}
+
+body {
+	margin: 0;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100vw;
+	overflow-x: hidden;
+	overflow-clip-margin: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

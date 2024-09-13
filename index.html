@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Crypto Beauties</title>
+
+		<link rel="stylesheet" href="styles/fonts.css">
+		<link rel="stylesheet" href="styles/styles.css">
+		<link rel="stylesheet" href="styles/index.css">
+	</head>
+	<body>
+		<nav class="center nav-bar">
+			<a href="/"><img src="/images/logo.png"></a>
+			<div class="center page-links">
+				<a class="text-section" id="text-about" href="/#about" onclick="selectSection(0)">about us</a>
+				<a class="text-section" id="text-villa" href="/#villa" onclick="selectSection(1)">the villa</a>
+				<a class="text-section" id="text-join" href="/#form" onclick="selectSection(2)">join the next season</a>
+			</div>
+			<svg onclick="openMenu()" class="menu-icon" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><rect y="11" width="24" height="2" rx="1"/><rect y="4" width="24" height="2" rx="1"/><rect y="18" width="24" height="2" rx="1"/></svg>
+		</nav>
+
+		<div class="menu center hidden" onclick="openMenu()">
+			<a href="/#about" onclick="selectSection(0)">about us</a>
+			<a href="/#villa" onclick="selectSection(1)">the villa</a>
+			<a href="/#form" onclick="selectSection(2)">join the next season</a>
+		</div>
+
+		<div class="center hero">
+			<h1 class="title font-size-1">invest in beauty.</h1>
+			<h2 class="subtitle font-size-3">finance your influence.</h2>
+			<img src="/images/hero.png">
+			<a class="scroll-button" href="#about"><img src="/images/scroll-button.png"></a>
+		</div>
+
+		<div id="about" class="center">
+			<img src="/images/bitcoins.png" id="about-bg">
+			<h1 class="font-size-2">financially responsible is the new beautiful.</h1>
+			<div class="center cards">
+				<div class="center card box">
+					<h2 class="font-size-3">what are we?</h2>
+					<p class="font-size-5">
+						Crypto Beauties is a high-stakes competition designed to identify the ultimate embodiment of beauty, intelligence, and crypto acumen. Contestants will be subjected to a series of challenges that test their knowledge of the blockchain, their ability to trade, and their charisma.
+					</p>
+				</div>
+				<div class="center card box">
+					<h2 class="font-size-3">how does it work?</h2>
+					<p class="font-size-5">
+						Contestants undergo intensive training in cryptocurrency trading, and financial literacy. They then showcase their beauty and style through photoshoots and fashion challenges. The final showdown determines the Ultimate Crypto Beauty, through expert and public voting.
+					</p>
+				</div>
+				<div class="center card box">
+					<h2 class="font-size-3">what do i get?</h2>
+					<p class="font-size-5">
+						The winner of the Crypto Beauties Reality Show will receive a substantial cash prize, a lucrative cryptocurrency investment, and the opportunity to become a global ambassador for the Crypto Beauties brand.
+
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="villa" class="center">
+			<div class="center villa-title">
+				<h1 class="font-size-2">welcome to the&nbsp;</h1>
+				<h1 class="font-size-2 shadow">crypto villa</h1>
+				<h1 class="font-size-2">.</h1>
+			</div>
+			<div class="center villa-info">
+				<img class="info-box" src="/images/villa-image.png">
+				<div class="info-box center box font-size-4">
+					<p>Final participants of the challenge will be invited all expenses paid co-living co-learning unique experience during a 3 months program in a paradisiac location. This in-person program will be the basis for a reality TV show to significantly expand the social media influence of the participants while giving them an intensive training of crypto trading. This program will culminate in the selection of the ultimate Crypto Beauty.</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="form" class="center">
+			<h1 class="font-size-2">so, what are you waiting for?</h1>
+			<p class="font-size-5">sign up for the next season now.</p>
+			<form class="box center form" action="https://formspree.io/f/xwpejlda" method="post">
+				<div class="form-field center">
+					<label class="font-size-5">first name</label>
+					<input class="font-size-5" name="first name" type="text" required placeholder="add your first name">
+				</div>
+				<div class="form-field center">
+					<label class="font-size-5">last name</label>
+					<input class="font-size-5" name="last name" type="text" required placeholder="add your last name">
+				</div>
+				<div class="form-field center">
+					<label class="font-size-5">email</label>
+					<input class="font-size-5" name="email" type="email" required placeholder="example@example.com">
+				</div>
+				<div class="form-field center">
+					<label class="font-size-5">phone number</label>
+					<input class="font-size-5" name="phone number" type="tel" required placeholder="e.g.:: +XXX XXXXXXXX">
+				</div>
+				<div class="form-field center full-length">
+					<label class="font-size-5">what makes you the <strong>Ultimate Crypto Beauty</strong>?</label>
+					<textarea class="font-size-5" name="bio answer" required placeholder="talk about what makes you perfect for the challenge - suggested word limit of about 2500 words"></textarea>
+				</div>
+				<div class="form-field center full-length">
+					<label class="font-size-5">link to video submission</label>
+					<input class="font-size-5" name="video submission" type="url" required placeholder="add your video link here">
+				</div>
+				<button>submit</button>
+			</form>
+		</div>
+
+		<footer>
+			<img src="/images/logo.png">
+			<div class="footer-links">
+				<a href="/">privacy policy</a>
+				<a href="/">terms & conditions</a>
+				<a href="/">frequently asked questions</a>
+			</div>
+			<div class="social-icons">
+				<a href="/"><img src="/images/instagram.svg"></a>
+				<a href="/"><img src="/images/telegram.svg"></a>
+				<a href="/"><img src="/images/tik-tok.svg"></a>
+				<a href="/"><img src="/images/youtube.svg"></a>
+			</div>
+		</footer>
+		<script src="/scripts/changeTextColor.js"></script>
+		<script src="/scripts/menu.js"></script>
+	</body>
+</html>
