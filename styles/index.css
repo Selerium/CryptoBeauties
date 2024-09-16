@@ -124,22 +124,32 @@
 	}
 }
 
-.scroll-button {
-	display: contents;
-}
-
-.scroll-button img {
-	position: block;
+.to-form-button {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
 	z-index: 10;
-	top: 90vh;
-	height: 20px;
-	width: auto;
+	top: 70vh;
+	width: 60%;
 	transition: 300ms ease-out;
+	text-align: center;
 }
 
-.scroll-button img:hover {
-	/* transform: rotate(360deg); */
-	transform: rotateY(180deg);
+.scroll-button {
+	width: 180px;
+	text-wrap: nowrap;
+	margin-top: 2rem;
+	padding: 1rem 1.5rem;
+	background-color: var(--pink);
+	border-radius: 25px;
+	transition: 200ms ease;
+}
+
+.scroll-button:hover {
+	transform: scale(1.05);
+	background-color: #663066;
+	color: var(--pink);
 }
 
 .box {
