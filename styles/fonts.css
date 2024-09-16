@@ -2,14 +2,14 @@
 	font-family: 'urbanist';
 	font-style: normal;
 	font-optical-sizing: auto;
-	src: url('fonts/urbanist/urbanist.ttf');
+	src: url('../fonts/urbanist/urbanist.ttf');
 }
 
 @font-face {
 	font-family: 'urbanist';
 	font-style: italic;
 	font-optical-sizing: auto;
-	src: url('fonts/urbanist/urbanist-italic.ttf');
+	src: url('../fonts/urbanist/urbanist-italic.ttf');
 }
 
 h1, h2, h3, h4, h5 {
