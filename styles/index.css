@@ -129,9 +129,9 @@
 }
 
 .scroll-button img {
-	position: absolute;
+	position: block;
 	z-index: 10;
-	bottom: 4rem;
+	top: 90vh;
 	height: 20px;
 	width: auto;
 	transition: 300ms ease-out;
