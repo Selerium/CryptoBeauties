@@ -5,5 +5,6 @@ function selectSection(num) {
 		element.style.color = 'white';
 	});
 
-	list[num].style.color = 'var(--pink)';
+	if (num >= 0)
+		list[num].style.color = 'var(--pink)';
 }
