@@ -39,12 +39,14 @@
 }
 
 .nav-bar a img {
-	height: 100%;
+	height: 80%;
 	width: auto;
 }
 
 .nav-bar .page-links {
 	gap: 5rem;
+	justify-content: center;
+	text-align: center;
 
 	@media screen and (max-width: 1000px) {
 		display: none;
@@ -66,7 +68,7 @@
 }
 
 .nav-bar .page-links a {
-	font-weight: 600;
+	font-weight: normal;
 	font-size: 1.25rem;
 	text-decoration: none;
 	color: white;
@@ -101,26 +103,26 @@
 
 .title {
 	transform: translate(-3px, -3px);
-	text-shadow: 6px 6px 0 var(--pink);
+	text-shadow: 6px 6px 0 var(--primary);
 
 	@media screen and (max-width: 660px) {
 		transform: translate(-1px, -1px);
-		text-shadow: 4px 4px 0 var(--pink);
+		text-shadow: 4px 4px 0 var(--primary);
 	}
 }
 
 .shadow {
 	transform: translate(-2px, -2px);
-	text-shadow: 4px 4px 0 var(--pink);
+	text-shadow: 4px 4px 0 var(--primary);
 
 	@media screen and (max-width: 1000px) {
 		transform: translate(-2px, -2px);
-		text-shadow: 3px 3px 0 var(--pink);
+		text-shadow: 3px 3px 0 var(--primary);
 	}
 
 	@media screen and (max-width: 660px) {
 		transform: translate(-1px, -1px);
-		text-shadow: 2px 2px 0 var(--pink);
+		text-shadow: 2px 2px 0 var(--primary);
 	}
 }
 
@@ -128,28 +130,32 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	position: absolute;
-	z-index: 10;
-	top: 70vh;
+	justify-content: flex-start;
 	width: 60%;
+	height: fit-content;
 	transition: 300ms ease-out;
 	text-align: center;
 }
 
-.scroll-button {
-	width: 180px;
-	text-wrap: nowrap;
-	margin-top: 2rem;
-	padding: 1rem 1.5rem;
-	background-color: var(--pink);
-	border-radius: 25px;
+.to-form-button a {
+	width: fit-content;
+	height: fit-content;
+}
+
+a .scroll-button {
+	display: block;
+	position: absolute;
+
+	width: 200px;
+	height: auto;
+	z-index: 10;
+	top: 80vh;
+	margin-left: -100px;
 	transition: 200ms ease;
 }
 
-.scroll-button:hover {
+a .scroll-button:hover {
 	transform: scale(1.05);
-	background-color: #663066;
-	color: var(--pink);
 }
 
 .box {
@@ -161,7 +167,7 @@
 	justify-content: space-evenly;
 
 	background-color: black;
-	box-shadow: 0 0 32px 2px var(--pink-shadow);
+	box-shadow: 0 0 32px 2px var(--primary-shadow);
 }
 
 #about {
@@ -181,6 +187,7 @@
 #about .cards {
 	width: 100%;
 	height: fit-content;
+	padding: 2rem 0;
 
 	justify-content: space-evenly;
 	flex-wrap: wrap;
@@ -193,8 +200,9 @@
 	height: 375px;
 
 	@media screen and (max-width: 660px) {
-		width: 320px;
+		width: 300px;
 		height: fit-content;
+		gap: 1rem;
 	}
 }
 
@@ -218,7 +226,7 @@
 	box-sizing: border-box;
 	width: 650px;
 	height: 400px;
-	box-shadow: 0 0 32px 2px var(--pink-shadow);
+	box-shadow: 0 0 32px 2px var(--primary-shadow);
 	border-radius: 20px;
 
 	@media screen and (max-width: 1000px) {
@@ -227,7 +235,7 @@
 	}
 
 	@media screen and (max-width: 660px) {
-		width: 320px;
+		width: 300px;
 	}
 }
 
@@ -244,7 +252,7 @@
 }
 
 #form {
-	min-height: 100vh;
+	min-height: 70vh;
 	height: fit-content;
 	width: 90vw;
 	flex-direction: column;
@@ -252,6 +260,32 @@
 	box-sizing: border-box;
 }
 
+.apply-and-subscribe {
+	display: flex;
+	gap: 5rem;
+	
+	@media screen and (max-width: 1000px) {
+		flex-direction: column;
+		gap: 1rem;
+	}
+}
+
+.apply-buttons {
+	width: 200px;
+	padding: 1rem 1.5rem;
+	margin-top: 1rem;
+	text-align: center;
+	border-radius: 3rem;
+	background-color: var(--primary);
+	transition: 300ms ease;
+}
+
+.apply-buttons:hover {
+	background-color: var(--ternary);
+	transform: scale(1.05);
+	color: black;
+}
+/* 
 .form {
 	margin-top: 2rem;
 	min-height: 70%;
@@ -282,7 +316,7 @@
 }
 
 textarea {
-	font-family: 'urbanist';
+	font-family: 'futura';
 	font-size: 22px;
 	width: 90%;
 	height: 150px;
@@ -294,9 +328,8 @@ textarea {
 }
 
 label, input {
-	/* font-size: 22px; */
 	width: 80%;
-	font-family: 'urbanist';
+	font-family: 'futura';
 
 	@media screen and (max-width: 660px) {
 		width: 90%;
@@ -313,12 +346,11 @@ button {
 	margin-top: 10px;
 	font-size: 22px;
 	font-weight: 600;
-	font-family: 'urbanist';
+	font-family: 'futura';
 	padding: 1rem 1.5rem;
+	border: none;
 	border-radius: 3rem;
-	background-color: var(--pink);
-	color: #663066;
-	border: solid #663066;
+	background-color: var(--primary);
 	cursor: pointer;
 	transition: 150ms;
 
@@ -329,10 +361,10 @@ button {
 }
 
 button:hover {
-	background-color: #663066;
-	color: var(--pink);
-	border: solid var(--pink);
-}
+	background-color: var(--ternary);
+	transform: scale(1.05);
+	color: white;
+} */
 /* 
 input:not(:placeholder-shown):valid {
 	border-color: var(--valid);
@@ -358,7 +390,7 @@ footer {
 }
 
 footer img {
-	height: 7rem;
+	height: 5rem;
 	width: auto;
 }
 

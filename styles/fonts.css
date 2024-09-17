@@ -1,16 +1,30 @@
 @font-face {
-	font-family: 'urbanist';
+	font-family: 'futura';
 	font-style: normal;
-	font-optical-sizing: auto;
-	src: url('../fonts/urbanist/urbanist.ttf');
+	src: url('../fonts/futura/futura-regular.ttf');
+	font-weight: normal;
 }
 
 @font-face {
-	font-family: 'urbanist';
-	font-style: italic;
-	font-optical-sizing: auto;
-	src: url('../fonts/urbanist/urbanist-italic.ttf');
+	font-family: 'futura';
+	font-style: normal;
+	src: url('../fonts/futura/futura-bold.ttf');
+	font-weight: bold;
 }
+
+/* @font-face {
+	font-family: 'articulat';
+	font-style: normal;
+	src: url('../fonts/articulat/articulatcf-regular.otf');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'articulat';
+	font-style: normal;
+	src: url('../fonts/articulat/articulatcf-light.otf');
+	font-weight: lighter;
+} */
 
 h1, h2, h3, h4, h5 {
 	margin: 0;
@@ -18,11 +32,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .font-size-1 {
-	font-size: 189px;
-
-	@media screen and (max-width: 1600px) {
-		font-size: 120px;
-	}
+	font-size: 90px;
 
 	@media screen and (max-width: 1000px) {
 		font-size: 80px;
@@ -50,7 +60,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .font-size-3 {
-	font-size: 48px;
+	font-size: 36px;
 
 	@media screen and (max-width: 1600px) {
 		font-size: 36px;
@@ -78,7 +88,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .font-size-5 {
-	font-size: 22px;
+	font-size: 20px;
 
 	@media screen and (max-width: 1000px) {
 		font-size: 18px;

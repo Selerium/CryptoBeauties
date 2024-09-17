@@ -1,13 +1,28 @@
-@property --pink {
+/* tomato cream */
+@property --primary {
 	syntax: "<color>";
 	inherits: false;
-	initial-value: #EF5EE5;
+	initial-value: #ce2939;
 }
 
-@property --pink-shadow {
+/* sun orange */
+@property --primary-shadow {
 	syntax: "<color>";
 	inherits: false;
-	initial-value: #ef5ee580;
+	initial-value: #ce293980;
+}
+
+/* golden palm */
+@property --secondary {
+	syntax: "<color>";
+	inherits: false;
+	initial-value: #aa8805;
+}
+
+@property --ternary {
+	syntax: "<color>";
+	inherits: false;
+	initial-value: #f48037;
 }
 
 @property --valid {

@@ -12,7 +12,7 @@
 	</head>
 	<body>
 		<nav class="center nav-bar">
-			<a href="/"><img src="images/logo.png"></a>
+			<a href="/"><img src="images/white-logo.png"></a>
 			<div class="center page-links">
 				<a class="text-section" id="text-about" href="#about" onclick="selectSection(0)">about us</a>
 				<a class="text-section" id="text-villa" href="#villa" onclick="selectSection(1)">the villa</a>
@@ -22,42 +22,43 @@
 		</nav>
 
 		<div class="menu center hidden" onclick="openMenu()">
-			<a id="nav-1" href="#about" onclick="selectSection(0)">about us</a>
-			<a id="nav-2" href="#villa" onclick="selectSection(1)">the villa</a>
-			<a id="nav-3" href="#form" onclick="selectSection(2)">join the next season</a>
+			<a class="menu-section" id="nav-1" href="#about" onclick="selectSection(0)">about us</a>
+			<a class="menu-section" id="nav-2" href="#villa" onclick="selectSection(1)">the villa</a>
+			<a class="menu-section" id="nav-3" href="#form" onclick="selectSection(2)">join the next season</a>
 		</div>
 
 		<div class="center hero">
-			<h1 class="title font-size-1">invest in beauty.</h1>
-			<h2 class="subtitle font-size-3">finance your influence.</h2>
+			<h1 class="title font-size-1">beauty meets blockchain</h1>
+			<h2 class="subtitle font-size-3">the ultimate beauty reality show competition</h2>
 			<img src="images/hero.png">
 			<div class="to-form-button">
-				<p>sign up for a chance to win $50,000. join Crypto Beauties, a tropical reality TV show where stunning contestants learn to trade crypto and build their influence in a paradise location.</p>
-				<a class="scroll-button" href="#form">apply now for season 1</a>
+				<p class="font-size-5">discover a new era of beauty where digital and real collide. join Crypto Beauties and showcase your unique style in a groundbreaking competition.</p>
+				<a href="#form">
+					<img class="scroll-button" src="images/apply-now.png">
+				</a>
 			</div>
 		</div>
 
 		<div id="about" class="center">
-			<img src="images/bitcoins.png" id="about-bg">
+			<!-- <img src="images/bitcoins.png" id="about-bg"> -->
 			<h1 class="font-size-2">financially responsible is the new beautiful.</h1>
 			<div class="center cards">
 				<div class="center card box">
-					<h2 class="font-size-3">what are we?</h2>
+					<h2 class="font-size-4">what is CryptoBeautiesTV?</h2>
 					<p class="font-size-5">
-						Crypto Beauties is a high-stakes competition designed to identify the ultimate embodiment of beauty, intelligence, and crypto acumen. Contestants will be subjected to a series of challenges that test their knowledge of the blockchain, their ability to trade, and their charisma.
+						CryptoBeautiesTV is a groundbreaking reality show that combines the glamour of traditional beauty pageants with the innovation of the digital world. We offer a unique and exciting experience for both contestants and viewers, celebrating beauty, technology, and empowerment.
 					</p>
 				</div>
 				<div class="center card box">
-					<h2 class="font-size-3">how does it work?</h2>
+					<h2 class="font-size-4">how does it work?</h2>
 					<p class="font-size-5">
-						Contestants undergo intensive training in cryptocurrency trading, and financial literacy. They then showcase their beauty and style through photoshoots and fashion challenges. The final showdown determines the Ultimate Crypto Beauty, through expert and public voting.
+						Our show provides a platform for aspiring digital beauties to showcase their talents and compete for the coveted title of Crypto Beauty Queen. Contestants will undergo intensive training in our Crypto Beauties Bootcamp and participate in a series of challenges. Viewers can enjoy thrilling reality show episodes, vote for their favorite contestants, and engage with the vibrant community.
 					</p>
 				</div>
 				<div class="center card box">
-					<h2 class="font-size-3">what do i get?</h2>
+					<h2 class="font-size-4">what do i get?</h2>
 					<p class="font-size-5">
-						The winner of the Crypto Beauties Reality Show will receive a substantial cash prize, a lucrative cryptocurrency investment, and the opportunity to become a global ambassador for the Crypto Beauties brand.
-
+						Whether you're a contestant or a viewer, CryptoBeautiesTV offers numerous benefits. Contestants have the opportunity to gain exposure, win exciting prizes, and become digital influencers. Viewers can enjoy entertaining content, connect with like-minded individuals, and even participate in exclusive events. Join us and experience the future of beauty!
 					</p>
 				</div>
 			</div>
@@ -72,7 +73,7 @@
 			<div class="center villa-info">
 				<img class="info-box" src="images/villa-image.png">
 				<div class="info-box center box font-size-4">
-					<p>Final participants of the challenge will be invited all expenses paid co-living co-learning unique experience during a 3 months program in a paradisiac location. This in-person program will be the basis for a reality TV show to significantly expand the social media influence of the participants while giving them an intensive training of crypto trading. This program will culminate in the selection of the ultimate Crypto Beauty.</p>
+					<p>Chosen participants will be invited to the Crypto Beauties Villa. An all inclusive luxury experience awaits. Here contestants will be subjected to the intensive Crypto Beauties Bootcamp and challenges. The program will culminate in the selection of the winner.</p>
 				</div>
 			</div>
 		</div>
@@ -80,47 +81,26 @@
 		<div id="form" class="center">
 			<h1 class="font-size-2">so, what are you waiting for?</h1>
 			<p class="font-size-5">sign up for the next season now.</p>
-			<form class="box center form" action="https://formspree.io/f/xwpejlda" method="post">
-				<div class="form-field center">
-					<label class="font-size-5">first name</label>
-					<input class="font-size-5" name="first name" type="text" required placeholder="add your first name">
-				</div>
-				<div class="form-field center">
-					<label class="font-size-5">last name</label>
-					<input class="font-size-5" name="last name" type="text" required placeholder="add your last name">
-				</div>
-				<div class="form-field center">
-					<label class="font-size-5">email</label>
-					<input class="font-size-5" name="email" type="email" required placeholder="example@example.com">
-				</div>
-				<div class="form-field center">
-					<label class="font-size-5">phone number</label>
-					<input class="font-size-5" name="phone number" type="tel" required placeholder="e.g.:: +XXX XXXXXXXX">
-				</div>
-				<div class="form-field center full-length">
-					<label class="font-size-5">what makes you the <strong>Ultimate Crypto Beauty</strong>?</label>
-					<textarea class="font-size-5" name="bio answer" required placeholder="talk about what makes you perfect for the challenge - suggested word limit of about 2500 words"></textarea>
-				</div>
-				<div class="form-field center full-length">
-					<label class="font-size-5">link to video submission</label>
-					<input class="font-size-5" name="video submission" type="url" required placeholder="add your video link here">
-				</div>
-				<button>submit</button>
-			</form>
+			<div class="apply-and-subscribe">
+				<a target="_blank" href="https://forms.gle/R6t7yMMCWvDvYqQk6" class="apply-buttons font-size-4">apply now</a>
+				<a target="_blank" href="/" class="apply-buttons font-size-4">newsletter</a>
+			</div>
 		</div>
 
 		<footer>
-			<img src="images/logo.png">
+			<img src="images/white-logo.png">
 			<div class="footer-links">
 				<a href="/">privacy policy</a>
 				<a href="/">terms & conditions</a>
 				<a href="/">frequently asked questions</a>
 			</div>
 			<div class="social-icons">
-				<a href="/"><img src="images/instagram.svg"></a>
-				<a href="/"><img src="images/telegram.svg"></a>
-				<a href="/"><img src="images/tik-tok.svg"></a>
-				<a href="/"><img src="images/youtube.svg"></a>
+				<a target="_blank" href="https://www.instagram.com/cryptobeautiestv?igsh=NmZ6cjRvbWxsYWdo"><img src="images/instagram.svg"></a>
+				<a target="_blank" href="https://t.me/+92qd4f45sMM2YTMy"><img src="images/telegram.svg"></a>
+				<a target="_blank" href="https://www.tiktok.com/@cryptobeauties"><img src="images/tik-tok.svg"></a>
+				<a target="_blank" href="https://www.youtube.com/@CryptoBeauties"><img src="images/youtube.svg"></a>
+				<a target="_blank" href="https://x.com/CryptoBeautyTV"><img src="images/twitter.svg"></a>
+				<a target="_blank" href="https://www.facebook.com/CryptoBeauties.tv"><img src="images/facebook.svg"></a>
 			</div>
 		</footer>
 		<script src="scripts/changeTextColor.js"></script>
