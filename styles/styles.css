@@ -1,6 +1,4 @@
 :root {
-	background-color: black;
-	color: white;
 	font-family: 'futura';
 }
 
@@ -12,13 +10,6 @@ html {
 
 body {
 	margin: 0;
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 100vw;
-	overflow-x: hidden;
-	overflow-clip-margin: 20px;
 }
 
 a {
@@ -30,4 +21,19 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.left {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.col {
+	flex-direction: column;
+}
+
+.window {
+	height: 100vh;
+	width: 100vw;
 }
