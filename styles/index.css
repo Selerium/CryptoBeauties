@@ -3,6 +3,10 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+	
+	@media screen and (max-width: 1400px) {
+		background-image: url('../images/bg-1-small.png');
+	}
 }
 
 .head-shadow {
@@ -13,6 +17,12 @@
 .head {
 	font-size: calc(24px + 5vw);
 	color: white;
+}
+
+.hero-item {
+	@media screen and (max-width: 600px) {
+		margin-top: 6rem;
+	}
 }
 
 #logo {
@@ -37,6 +47,7 @@
 
 #ultimate-show {
 	background-color: var(--primary);
+	gap: 2rem;
 }
 
 #ultimate-show h1 {
@@ -49,6 +60,14 @@
 	color: white;
 	max-width: 60%;
 	text-align: center;
+	margin: 0;
+	margin-bottom: 0.5rem;
+
+	@media screen and (max-width: 600px) {
+		max-width: 80%;
+		text-align: justify;
+		text-align-last: center;
+	}
 }
 
 #ultimate-show a {
@@ -63,6 +82,7 @@
 	background-image: url('../images/bg-2.png');
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: 40%;
 	color: white;
 	
 	@media screen and (max-width: 1400px) {
@@ -150,11 +170,13 @@
 }
 
 .what-info {
-	padding-top: 2rem;
 	width: 40%;
 	align-items: flex-start;
-
+	gap: 2rem;
+	
 	@media screen and (max-width: 1400px) {
+		margin: auto 0;
+		align-items: center;
 		width: 80%;
 	}
 }
@@ -162,6 +184,10 @@
 #what-it-takes h1, #what-it-takes p {
 	width: 100%;
 	text-align: left;
+
+	@media screen and (max-width: 1400px) {
+		text-align: center;
+	}
 }
 
 #what-it-takes > * {
@@ -172,6 +198,8 @@
 
 #what-it-takes p {
 	font-size: 18px;
+	margin: 0;
+	margin-bottom: 0.5rem;
 }
 
 #what-it-takes img {
@@ -193,11 +221,12 @@
 	color: white;
 	box-sizing: border-box;
 	padding: 4rem;
+	gap: 2rem;
 
 	@media screen and (max-width: 1400px) {
 		padding: 2rem;
 		align-items: center;
-		gap: 6rem;
+		gap: 10rem;
 	}
 
 	@media screen and (max-width: 600px) {
@@ -255,7 +284,7 @@
 	}
 
 	@media screen and (max-width: 600px) {
-		background-position-x: 50%;
+		background-position-x: 53%;
 		padding: 1rem;
 	}
 }
@@ -269,6 +298,8 @@
 	
 	@media screen and (max-width: 1400px) {
 		width: 100%;
+		margin-bottom: 5rem;
+		justify-content: flex-end;
 		align-items: center;
 	}
 }
@@ -289,7 +320,8 @@
 }
 
 .upper a {
-	padding: 1.5rem 2rem;
+	margin-top: 0.5rem;
+	padding: 1rem 1rem;
 	width: fit-content;
 	background-color: var(--primary);
 }
@@ -317,8 +349,9 @@
 .footer-left {
 	display: flex;
 	gap: 2rem;
-
+	
 	@media screen and (max-width: 1400px) {
+		gap: 1rem;
 		flex-direction: column;
 		align-items: center;
 	}
@@ -330,7 +363,7 @@
 	justify-content: space-evenly;
 
 	@media screen and (max-width: 1400px) {
-		gap: 1rem;
+		gap: 0.5rem;
 		text-align: center;
 	}
 }
@@ -339,7 +372,7 @@
 	margin: auto 0;
 
 	@media screen and (max-width: 1400px) {
-		padding-top: 2rem;
+		padding-top: 1rem;
 	}
 }
 
