@@ -5,6 +5,10 @@
 	initial-value: #ce2939;
 }
 
+.primary {
+	color: var(--primary);
+}
+
 /* sun orange */
 @property --primary-shadow {
 	syntax: "<color>";
@@ -19,10 +23,18 @@
 	initial-value: #aa8805;
 }
 
-@property --ternary {
+.secondary {
+	color: var(--secondary);
+}
+
+@property --tertiary {
 	syntax: "<color>";
 	inherits: false;
 	initial-value: #f48037;
+}
+
+.tertiary {
+	color: var(--tertiary);
 }
 
 @property --valid {

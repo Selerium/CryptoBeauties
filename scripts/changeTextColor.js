@@ -1,3 +1,5 @@
+window.scrollX(0);
+
 list = document.querySelectorAll(".text-section");
 
 function selectSection(num) {
