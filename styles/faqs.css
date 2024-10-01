@@ -1,0 +1,45 @@
+header {
+	padding: 2rem 10vw;
+	box-sizing: border-box;
+
+	width: 100vw;
+	min-height: 150px;
+	height: 5vh;
+
+	display: flex;
+	gap: 2rem;
+	align-items: center;
+
+	background-color: var(--primary);
+
+	h1 {
+		color: white;
+		font-size: 48px;
+	}
+	
+	svg {
+		height: 100%;
+		width: auto;
+	}
+
+	@media screen and (max-width: 600px) {
+		flex-direction: column;
+		height: fit-content;
+
+		svg {
+			height: 75px;
+		}
+	}
+}
+
+.content {
+	width: 100vw;
+
+	box-sizing: border-box;
+	padding: 2rem 10vw;
+
+	* {
+		text-align: left;
+		font-size: 22px;
+	}
+}
